@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "name": "tim",
+      "price": "2",
+      "type": "test",
+      "brand": "test",
+      "id": 1
+    },
+    {
+      "name": "tim",
+      "price": "4.99",
+      "type": "test",
+      "brand": "test",
+      "id": 2
+    },
+    {
+      "name": "tim",
+      "price": "4.99",
+      "type": "tet",
+      "brand": "et",
+      "id": 3
+    }
+  ]
+}
