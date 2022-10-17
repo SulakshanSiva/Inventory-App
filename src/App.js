@@ -1,18 +1,22 @@
 import './App.css';
 import SearchBar from "./SearchBar.js";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import AddItem from './AddItem';
 import ItemsDisplay from './ItemsDisplay';
+import Test from './Class'
 
 function App() {
     const [filters, setFilters] = useState({}); 
     const [data, setData] = useState({items: [] });
 
+    useEffect(() =>{
+        fetch("http://localhost:3000/items").then((response) => response.json())
+        .then((data) => setData({items: data}))
+    }, [])
+
     const updateFilters = (searchParams) =>{
         setFilters(searchParams);
     }
-
-
 
     const addItemToData = (item) =>{
         let items = data["items"];
@@ -75,6 +79,7 @@ function App() {
         <div className="row mt-3">
             <AddItem addItem={addItemToData}/>
         </div>
+        <Test/>
 
     </div>
   );
