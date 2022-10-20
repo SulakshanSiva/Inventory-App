@@ -6,13 +6,6 @@
       "type": "tet",
       "brand": "et",
       "id": 3
-    },
-    {
-      "name": "bob",
-      "price": "5.99",
-      "type": "perosn",
-      "brand": "cookl",
-      "id": 4
     }
   ]
 }
